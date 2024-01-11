@@ -1,0 +1,39 @@
+.cookieBanner {
+  position: fixed;
+  top: 30%;
+  left: 7%;
+  width: 300px;
+  height: 200px;
+  color: white;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  padding-right: 10px;
+  padding-left: 15px;
+  align-items: center;
+  z-index: 1000;
+}
+
+.cookieBanner p {
+  margin: 10px 0;
+}
+
+.cookieBanner button {
+  padding: 10px 20px;
+  background-color: #000000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cookieBanner button:hover {
+  background-color: #0056b3;
+}
+
+@media screen and (min-width: 768px) {
+  .cookieBanner {
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+  }
+}
