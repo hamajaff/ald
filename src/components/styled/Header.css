@@ -42,7 +42,6 @@ nav {
   transition: transform 0.5s ease-in-out;
   display: none;
   color: black;
-  margin: 20px;
 }
 
 nav.open {
