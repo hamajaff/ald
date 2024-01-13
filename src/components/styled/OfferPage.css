@@ -6,6 +6,12 @@ form {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
 }
+.offer-banner {
+  width: 100vw;
+  height: auto;
+  display: block;
+  margin-bottom: 20px;
+}
 h1 {
   display: flex;
   justify-content: center;
