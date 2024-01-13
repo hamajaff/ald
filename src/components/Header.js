@@ -22,19 +22,19 @@ function Header() {
 
       <nav className={isMenuOpen ? "open" : ""}>
         <ul>
-          <li>
+          <li onClick={toggleMenu}>
             <Link to="/">Hem</Link>
           </li>
-          <li>
+          <li onClick={toggleMenu}>
             <Link to="/services">Våra tjänster</Link>
           </li>
-          <li>
+          <li onClick={toggleMenu}>
             <Link to="/offer">Offert förfrågning</Link>
           </li>
-          <li>
+          <li onClick={toggleMenu}>
             <Link to="/about">Om Oss</Link>
           </li>
-          <li>
+          <li onClick={toggleMenu}>
             <Link to="/contact">Kontakt</Link>
           </li>
         </ul>
