@@ -59,7 +59,7 @@ function OfferPage() {
   return (
     <div>
       <div className="headerPlaceholder"></div>
-      <img src="./banner-offer.png" alt="banner" className="offer-banner"></img>
+      <img src="./offerbanner.png" alt="banner" className="offer-banner"></img>
 
       <form onSubmit={handleSubmit}>
         <div>

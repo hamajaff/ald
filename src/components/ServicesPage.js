@@ -4,11 +4,7 @@ import "./styled/ServicesPage.css";
 
 function ServicesPage() {
   const [posts, setPosts] = useState([]);
-  const images = [
-    "/renhallning1.jpg",
-    "/gardener.jpg",
-    "/snow-plow-4602073_1280.jpg",
-  ]; // Bildernas sökvägar
+  const images = ["/gardening-care.png", "/cleaning.png", "/winter-care.png"]; // Bildernas sökvägar
 
   const fetchPosts = () => {
     axios
