@@ -19,13 +19,15 @@ function PostsByCategory() {
   return (
     <div className="aboutPage">
       <div className="headerPlaceholder"></div>
-      <img src="./about.png" alt="Our vision" className="vision"></img>
-      {posts.map((post) => (
-        <div key={post.id} className="postCard">
-          <h2 dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
-          <div dangerouslySetInnerHTML={{ __html: post.content.rendered }} />
-        </div>
-      ))}
+      <img src="/aboutus.png" alt="Our vision" className="vision"></img>
+      <div className="card-container">
+        {posts.map((post) => (
+          <div key={post.id} className="postCard">
+            <h2 dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
+            <div dangerouslySetInnerHTML={{ __html: post.content.rendered }} />
+          </div>
+        ))}
+      </div>
     </div>
   );
 }

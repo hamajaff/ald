@@ -6,7 +6,7 @@ function HomePage() {
   return (
     <div className="homeContainer">
       <video autoPlay loop muted className="backgroundVideo">
-        <source src="/pexels-simplyart.mp4" type="video/mp4" />
+        <source src="/Stockholm-summer.mp4" type="video/mp4" />
       </video>
 
       <div className="content">

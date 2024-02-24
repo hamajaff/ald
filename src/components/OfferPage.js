@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./styled/OfferPage.css";
 import emailjs from "emailjs-com";
+import { useNavigate } from "react-router-dom";
 
 function OfferPage() {
   const [formData, setFormData] = useState({
@@ -9,7 +10,7 @@ function OfferPage() {
     phone: "",
     description: "",
   });
-
+  const navigate = useNavigate();
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevState) => ({
@@ -40,7 +41,7 @@ function OfferPage() {
 
     emailjs
       .send(
-        "service_335jk72",
+        "service_z28tehd",
         "template_81deyyz",
         templateParams,
         "LTc7Zu9rcKbm5_w9r"
@@ -49,6 +50,7 @@ function OfferPage() {
         (response) => {
           console.log("SUCCESS!", response.status, response.text);
           resetForm();
+          navigate("/confirmation");
         },
         (err) => {
           console.log("FAILED...", err);
@@ -57,12 +59,12 @@ function OfferPage() {
   };
 
   return (
-    <div>
+    <div className="offerContainer">
       <div className="headerPlaceholder"></div>
-      <img src="./offerbanner.png" alt="banner" className="offer-banner"></img>
 
       <form onSubmit={handleSubmit}>
         <div>
+          <h1 className="offerH1">Offertförfrågan</h1>
           <label>Namn:</label>
           <input
             type="text"

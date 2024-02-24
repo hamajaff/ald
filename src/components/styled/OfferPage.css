@@ -1,38 +1,44 @@
+.offerContainer {
+  background-image: url("../../../public/offer-banner.png");
+  background-position: center;
+  height: 100vh;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
 form {
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
-  width: 40vw;
-  /* max-width: 500px; */
+  width: 50vw;
   margin: auto;
-  background-color: white;
   padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
+  margin-top: 200px;
 
-  align-items: stretch;
+  background-color: #00000052;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.74);
+  border-radius: 10px;
 }
-.offer-banner {
-  margin-left: 10vw;
-  width: 80vw;
-  height: auto;
-  display: block;
-  margin-bottom: 20px;
+
+form textarea {
+  height: 100px;
 }
-h1 {
+.offerH1 {
   display: flex;
   justify-content: center;
 }
-
 div {
-  margin-bottom: 15px;
+  padding-bottom: 0px;
 }
 
 label {
   display: block;
   margin-bottom: 5px;
   font-size: 1.1em;
-  color: #000000;
+  color: white;
 }
 
 input,
@@ -60,4 +66,24 @@ button:hover {
   background-color: darkblue;
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
   transform: translateY(-5px);
+}
+
+/* Mobilanpassning */
+@media (max-width: 768px) {
+  .offerContainer {
+    height: 100vh; /* Gör att containern anpassar sig efter innehållet istället för att ta upp hela skärmhöjden */
+    padding-bottom: 20px; /* Lägg till lite utrymme i botten */
+  }
+
+  form {
+    width: 80vw; /* Öka bredden på formuläret för att bättre utnyttja den tillgängliga skärmbredden */
+    padding: 10px; /* Minska padding för att spara utrymme */
+  }
+
+  form label,
+  input,
+  textarea,
+  button {
+    font-size: 0.8em; /* Minska fontstorleken för att passa mindre skärmar */
+  }
 }

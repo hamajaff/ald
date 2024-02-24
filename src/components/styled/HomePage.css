@@ -9,8 +9,8 @@
 }
 
 .backgroundVideo {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   object-fit: cover;
   position: absolute;
   top: 0;
@@ -26,28 +26,28 @@
   align-items: center;
   height: 100%;
   padding: 0;
-  margin: 0;
+  margin-bottom: 100px;
 }
 
 .slogan {
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  width: 450px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: whitesmoke;
+  width: 50vw;
+  height: auto;
   font-size: 50px;
   text-align: center;
   padding: 10px;
-  border-radius: 50px;
+  border-radius: 25px;
 }
 
 .offerButton {
   display: inline-block;
   margin-top: 20px;
   padding: 10px 20px;
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: whitesmoke;
   text-align: center;
-  border-radius: 50px;
-  text-decoration: none;
+  border-radius: 10px;
   transition: background-color 0.3s ease;
 }
 
@@ -57,6 +57,7 @@
 
 @media screen and (max-width: 768px) {
   .slogan {
+    height: auto;
     width: auto;
     font-size: 40px;
     padding: 5px;
@@ -67,8 +68,6 @@
   }
 
   .content {
-    padding: 10px; /* Lite mer utrymme runt innehållet */
+    padding: 10px;
   }
-
-  /* Du kan lägga till fler stiljusteringar här baserat på dina behov */
 }

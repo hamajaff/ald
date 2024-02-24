@@ -1,11 +1,14 @@
 .services-container {
   display: flex;
   flex-direction: column;
-
-  margin-top: 94px;
+  background-color: #faf9f6;
+  padding-top: 125px;
   gap: 60px;
+  padding-bottom: 40px;
 }
-
+/* div {
+  padding-bottom: 15px;
+} */
 .service-img {
   width: 60vw;
   height: auto;

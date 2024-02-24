@@ -34,9 +34,6 @@ function Header() {
           <li onClick={toggleMenu}>
             <Link to="/about">Om Oss</Link>
           </li>
-          <li onClick={toggleMenu}>
-            <Link to="/contact">Kontakt</Link>
-          </li>
         </ul>
       </nav>
     </header>

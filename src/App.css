@@ -1,0 +1,13 @@
+.site-container {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+.content-wrap {
+  display: block;
+
+  background-color: #faf9f6;
+  flex: 1;
+}

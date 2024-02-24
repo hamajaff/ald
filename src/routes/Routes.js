@@ -4,7 +4,7 @@ import HomePage from "../components/HomePage";
 import AboutPage from "../components/AboutPage";
 import OfferPage from "../components/OfferPage";
 import ServicesPage from "../components/ServicesPage";
-import ContactPage from "../components/ContactPage";
+import ConfirmationPage from "../components/ConfirmationPage";
 
 const AppRoutes = () => {
   return (
@@ -13,7 +13,7 @@ const AppRoutes = () => {
       <Route path="/about" element={<AboutPage />} />
       <Route path="/offer" element={<OfferPage />} />
       <Route path="/services" element={<ServicesPage />} />
-      <Route path="/contact" element={<ContactPage />} />
+      <Route path="/confirmation" element={<ConfirmationPage />} />
     </Routes>
   );
 };

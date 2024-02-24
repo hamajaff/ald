@@ -1,0 +1,24 @@
+.confirmationContainer {
+  background-image: url("../../../public/offer-banner.png");
+  background-position: center;
+  height: 100vh;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.confirmationH2 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: rgba(0, 0, 0, 0.596);
+  color: antiquewhite;
+  width: 300px;
+  font-size: large;
+  height: auto;
+  border-radius: 10px;
+}

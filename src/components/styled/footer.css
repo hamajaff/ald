@@ -1,0 +1,11 @@
+.footer {
+  display: flex;
+  justify-content: center;
+
+  background-color: #4c4c4c; /* eller annan färg efter ditt val */
+  color: aliceblue;
+  text-align: center;
+  padding: 20px;
+  width: auto;
+  z-index: 10;
+}
