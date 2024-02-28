@@ -1,12 +1,18 @@
+body,
+html {
+  height: 100%; /* Säkerställer att body tar upp hela skärmhöjden */
+  margin: 0; /* Tar bort standardmarginalerna */
+  display: flex; /* Gör så att body använder flexbox */
+  flex-direction: column; /* Stackar element vertikalt */
+}
+
 .offerContainer {
+  flex-grow: 1; /* Gör så att .offerContainer expanderar för att fylla tillgängligt utrymme */
   background-image: url("../../../public/offer-banner.png");
   background-position: center;
-  height: 100vh;
-  width: auto;
+  background-size: cover;
   display: flex;
   flex-direction: column;
-  margin-bottom: 0;
-  padding-bottom: 0;
 }
 
 form {
